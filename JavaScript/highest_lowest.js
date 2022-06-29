@@ -8,4 +8,9 @@ function highAndLow(numbers){
     return `${hl[1]} ${hl[0]}`
 }
 
-console.log( highAndLow("-2 -6 -9") );
+function highAndLow2(numbers) {
+	let inters = numbers.split(' ').map(Number)
+	return `${Math.max(...inters)} ${Math.min(...inters)}`
+}
+
+console.log( highAndLow2("1 2 9 -1 -9 8") );
